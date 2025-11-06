@@ -1,0 +1,231 @@
+<!--
+  Charan Rachumalla - Web Portfolio (deployable)
+  Place profile photo at web-portfolio/assets/profile.jpg
+  Host via GitHub Pages, Netlify, or any static hosting
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charan Rachumalla - Senior Platform / Integration Engineer</title>
+    <link rel="icon" href="data:," />
+    <style>
+        /* Reuse the same styling as portfolio.html for a self-contained site */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+        .container { max-width: 1000px; margin: 0 auto; background-color: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; padding: 60px 40px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header h2 { font-size: 1.5em; font-weight: 300; opacity: 0.9; }
+        .content { padding: 40px; }
+        section { margin-bottom: 50px; }
+        h3 { color: #667eea; font-size: 1.8em; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid #667eea; }
+        h4 { color: #444; font-size: 1.3em; margin-bottom: 10px; }
+        .about-text { font-size: 1.1em; line-height: 1.8; color: #555; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .skill-category { background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+        .skill-category h5 { color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
+        .skill-category ul { list-style: none; padding-left: 0; }
+        .skill-category li { padding: 5px 0; padding-left: 20px; position: relative; }
+        .skill-category li:before { content: "▹"; position: absolute; left: 0; color: #667eea; font-weight: bold; }
+        .project { background-color: #f8f9fa; padding: 25px; margin-bottom: 25px; border-radius: 8px; border-left: 5px solid #667eea; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .project:hover { transform: translateX(5px); box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2); }
+        .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+        .project-role { color: #666; font-style: italic; font-size: 0.9em; }
+        .project ul { margin-left: 20px; margin-top: 10px; }
+        .project li { margin-bottom: 8px; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .tech-tag { background-color: #667eea; color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; }
+        .certifications { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
+        .cert-item { background-color: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #764ba2; }
+        .experience-item { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+        .company { color: #667eea; font-weight: bold; }
+        .date { color: #666; font-size: 0.9em; }
+        .experience-item ul { margin-left: 20px; margin-top: 10px; }
+        .experience-item li { margin-bottom: 8px; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .contact-item { text-align: center; padding: 20px; background-color: #f8f9fa; border-radius: 8px; transition: transform 0.3s ease; }
+        .contact-item:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .contact-item a { color: #667eea; text-decoration: none; font-weight: bold; }
+        .contact-item a:hover { color: #764ba2; }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+        .highlight-box { background-color: #e8f4f8; border-left: 5px solid #17a2b8; padding: 20px; margin: 20px 0; border-radius: 5px; }
+        @media print { body { background-color: #fff; } .container { box-shadow: none; } .project { page-break-inside: avoid; } }
+        @media (max-width: 768px) { header h1 { font-size: 2em; } .content { padding: 20px; } .job-header { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/profile.jpg" alt="Charan Rachumalla" style="width: 130px; height: 130px; border-radius: 50%; margin-bottom: 18px; border: 4px solid rgba(255,255,255,0.85); object-fit: cover;" />
+            <h1>Charan Rachumalla</h1>
+            <h2>Senior Platform / Integration Engineer</h2>
+        </header>
+        <div class="content">
+            <section id="about">
+                <h3>About Me</h3>
+                <p class="about-text">Senior Data/Platform/Integration Engineer with 7+ years architecting and operating enterprise real-time streaming platforms and self-service tooling on Confluent Kafka across multi-cloud. I lead cross-functional initiatives, design fault-tolerant, high-throughput systems processing millions of events per second with 99.9% uptime, and turn complex requirements into secure, scalable solutions.</p>
+                <p class="about-text" style="margin-top: 15px;">Known for automation (CI/CD, credential lifecycle, monitoring/alerting), developer enablement, and strong stakeholder communication.</p>
+            </section>
+            <section id="skills">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h5>Integration & Streaming</h5>
+                        <ul>
+                            <li>Apache Kafka (Confluent Platform/Cloud)</li>
+                            <li>Kafka Connect, Kafka Streams, ksqlDB, librdkafka</li>
+                            <li>Avro & Schema Registry; topic design, ACLs, RBAC</li>
+                            <li>Event-driven architecture, pub/sub, exactly-once</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h5>Programming & Frameworks</h5>
+                        <ul>
+                            <li>Python, Shell/Bash, PySpark, SQL, YAML, HCL (Terraform)</li>
+                            <li>Flask, Django</li>
+                            <li>Avro, JSON, Parquet, CSV, XML</li>
+                            <li>Terraform, Ansible, Docker</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h5>Cloud & Platforms</h5>
+                        <ul>
+                            <li>AWS (Lambda, EC2, S3, SNS, CloudWatch, IAM, VPC)</li>
+                            <li>Ali Cloud (ALB, SLB, SLS), IBM Cloud Kubernetes</li>
+                            <li>EKS/Kubernetes, Docker</li>
+                            <li>CI/CD: Bamboo, Jenkins</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h5>Monitoring & Soft Skills</h5>
+                        <ul>
+                            <li>CloudWatch, Prometheus, Grafana, Datadog, Splunk, Kibana</li>
+                            <li>Technical leadership and mentoring</li>
+                            <li>Stakeholder communication; Agile/Scrum & Kanban</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h3>Key Projects</h3>
+                <div class="project">
+                    <div class="project-header"><h4>Enterprise Kafka Self‑Service Platform</h4></div>
+                    <p class="project-role">Role: Lead/Principal Contributor | Duration: 2022 – Present</p>
+                    <p>Automated Kafka topic provisioning, Avro schema registration, and ACL management via REST APIs and governance workflows.</p>
+                    <ul>
+                        <li>Reduced deployment lead time from 2 days to ~10 minutes; enabled 100+ teams</li>
+                        <li>85% fewer deployment errors through automated validations and idempotent operations</li>
+                    </ul>
+                    <div class="tech-tags"><span class="tech-tag">Confluent Cloud</span><span class="tech-tag">Ali Cloud</span><span class="tech-tag">Python</span><span class="tech-tag">Django</span><span class="tech-tag">Flask</span></div>
+                </div>
+                <div class="project">
+                    <div class="project-header"><h4>CI/CD + IaC for Kafka Across Clouds</h4></div>
+                    <p class="project-role">Role: Platform Engineer</p>
+                    <p>Engineered Bamboo/Terraform pipelines for Kafka resources (topics, ACLs, schemas) with zero‑downtime releases and 100% deployment consistency.</p>
+                    <ul>
+                        <li>Granular permissions and automated validations; enterprise audit trails</li>
+                        <li>Real-time notifications to Microsoft Teams</li>
+                    </ul>
+                    <div class="tech-tags"><span class="tech-tag">Terraform</span><span class="tech-tag">Bamboo</span><span class="tech-tag">Confluent APIs</span><span class="tech-tag">Vault</span></div>
+                </div>
+                <div class="project">
+                    <div class="project-header"><h4>Credential Lifecycle Automation with Vault</h4></div>
+                    <p class="project-role">Role: Senior Integration Engineer</p>
+                    <p>Automated provisioning and rotation of Confluent service accounts, cluster API keys, and schema registry keys with secure storage in HashiCorp Vault.</p>
+                    <ul>
+                        <li>Eliminated manual key handling and drift; 100% security compliance</li>
+                    </ul>
+                    <div class="tech-tags"><span class="tech-tag">Confluent REST API</span><span class="tech-tag">Python</span><span class="tech-tag">Vault</span><span class="tech-tag">Security</span></div>
+                </div>
+                <div class="project">
+                    <div class="project-header"><h4>Kafka Connect on EKS + Self‑Service Connector Portal</h4></div>
+                    <p class="project-role">Role: Technical Lead</p>
+                    <p>Deployed production-grade Kafka Connect on Amazon EKS and built a Flask portal with OAuth SSO enabling non-technical teams to deploy connectors.</p>
+                    <ul>
+                        <li>99.9% connector uptime; deployment cycle reduced from 5 days to 4 hours</li>
+                    </ul>
+                    <div class="tech-tags"><span class="tech-tag">EKS</span><span class="tech-tag">Kafka Connect</span><span class="tech-tag">Flask</span><span class="tech-tag">OAuth 2.0</span></div>
+                </div>
+                <div class="project">
+                    <div class="project-header"><h4>Petabyte‑Scale Data Migration to AWS/Snowflake</h4></div>
+                    <p class="project-role">Role: Data Engineer</p>
+                    <p>Migrated 500+ TB from HDFS to S3/Snowflake with serverless ETL, automated validation, deduplication, and PII tokenization.</p>
+                    <ul>
+                        <li>99.99% data integrity; up to 10 TB/hour transfer; zero business disruption</li>
+                    </ul>
+                    <div class="tech-tags"><span class="tech-tag">AWS Lambda</span><span class="tech-tag">S3</span><span class="tech-tag">Snowflake</span><span class="tech-tag">Python</span></div>
+                </div>
+            </section>
+            <section id="certifications">
+                <h3>Certifications</h3>
+                <div class="certifications">
+                    <div class="cert-item">Confluent Certified Developer for Apache Kafka</div>
+                    <div class="cert-item">Confluent Certified Administrator for Apache Kafka</div>
+                </div>
+            </section>
+            <section id="experience"><h3>Professional Experience</h3>
+                <div class="experience-item"><div class="job-header"><div><h4>Sr Platform Engineer | Sr Integration Engineer</h4><p class="company">Align Technologies, Morrisville, NC</p></div><p class="date">Feb 2022 – Present</p></div>
+                    <ul>
+                        <li>Spearhead enterprise real‑time streaming platform on Confluent Kafka serving 100+ applications across Confluent Cloud and Ali Cloud</li>
+                        <li>Architect self‑service platform for topic provisioning, schema registration, and ACL configuration with automated validations</li>
+                        <li>Build Bamboo/Terraform CI/CD for Kafka resources with zero‑downtime releases and 100% deployment consistency</li>
+                        <li>Automate credential lifecycle (service accounts, API keys, schema registry keys) integrated with HashiCorp Vault</li>
+                        <li>Implement observability & alerting (CloudWatch, Prometheus, Teams) achieving 99.9% uptime and −45% MTTR</li>
+                    </ul>
+                    <div class="highlight-box"><strong>Key Contributions:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>Reduced deployment time from 2 days to ~10 minutes; manual ops −80%</li>
+                            <li>3× throughput improvement and −40% latency via cluster tuning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Addepto IT Solutions, Richmond, VA</p></div><p class="date">Apr 2021 – Feb 2022</p></div>
+                    <ul>
+                        <li>Designed multi‑tenant Kafka platform supporting 50+ applications with HA across AZs</li>
+                        <li>Built Ansible automation and Shell toolkits for topic/ACL provisioning (4h → 15m)</li>
+                        <li>Integrated Datadog/Kibana for lag, disk, and health metrics with proactive alerting</li>
+                    </ul>
+                </div>
+                <div class="experience-item"><div class="job-header"><div><h4>Data Engineer | Python Developer</h4><p class="company">Metrix IT Solutions, Richmond, VA</p></div><p class="date">Jun 2018 – Apr 2021</p></div>
+                    <ul>
+                        <li>Created Boto3 automation for EC2/S3/EMR/SNS; reduced AWS ops overhead by 70%</li>
+                        <li>Implemented blue‑green deployments with Jenkins; zero‑downtime releases</li>
+                        <li>Optimized Kafka throughput (3×) via batching, compression, and buffer tuning</li>
+                    </ul>
+                </div>
+                <div class="experience-item"><div class="job-header"><div><h4>Python Developer</h4><p class="company">Metrix IT Solutions, Nashville, TN</p></div><p class="date">2017 – 2018</p></div>
+                    <ul>
+                        <li>Delivered Django web apps and data parsing/ETL frameworks (CSV, XML, JSON)</li>
+                        <li>Integrated Python with legacy C using ctypes; reduced duplicate code by 60%</li>
+                        <li>Championed TDD; achieved 85%+ coverage</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education"><h3>Education</h3>
+                <p><strong>California State University, Fullerton</strong> — Master of Science, Mechanical Engineering</p>
+                <p><strong>KL University (India)</strong> — Bachelor of Technology</p>
+            </section>
+            <section id="contact"><h3>Contact Information</h3>
+                <div class="contact-grid">
+                    <div class="contact-item"><p>📧 Email</p><a href="mailto:charanreddy.rachumalla@gmail.com">charanreddy.rachumalla@gmail.com</a></div>
+                    <div class="contact-item"><p>💼 LinkedIn</p><a href="https://www.linkedin.com/in/crrachumalla-844a0a18b" target="_blank">View Profile</a></div>
+                    <div class="contact-item"><p>📞 Phone</p><a href="tel:+17147268990">(714) 726-8990</a></div>
+                    <div class="contact-item"><p>📍 Location</p><a href="#">Durham, NC 27703</a></div>
+                </div>
+            </section>
+            <section id="looking-for"><h3>What I'm Looking For</h3>
+                <div class="highlight-box"><p>I'm seeking roles where I can lead and scale cloud‑native, event‑driven platforms, mentor teams, and drive business outcomes through automation and reliability engineering.</p></div>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2025 Charan Rachumalla | Last Updated: November 2025</p>
+            <p style="margin-top: 10px;">Available for new opportunities</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
